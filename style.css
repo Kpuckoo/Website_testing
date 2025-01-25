@@ -1,0 +1,67 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #c1f7f5;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center the navbar horizontally */
+}
+
+.logo-container {
+  position: fixed; /* Keep the logo at the top-left corner */
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.logo-container img {
+  height: 50px; /* Adjust the logo size */
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Ensure it stays above the content but below the logo */
+}
+
+.nav-links li {
+  list-style: none;
+  margin: 0 12px;
+}
+
+.nav-links li a {
+  position: relative;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  text-decoration: none;
+}
+
+.nav-links li a:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0%;
+  background: #34efdf;
+  border-radius:
